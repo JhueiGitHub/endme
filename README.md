@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Project: Orion OS - A Web-Based Operating System Prototype
+Overview:
+Orion OS is an ambitious web-based operating system prototype built using Next.js, React, and TypeScript. It features a desktop environment with a dock, window management system, and aims to integrate various applications within its ecosystem.
+Key Features:
 
-## Getting Started
+Desktop environment with interactive dock
+Window management system with genie-like animations
+WebGL-powered UI effects
+App integration framework
 
-First, run the development server:
+Current Tech Stack:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js 14+ with App Router
+React 18+
+TypeScript
+Tailwind CSS for styling
+Framer Motion for animations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Project Structure:
+The project uses the App Router structure (app/ directory) instead of the pages/ directory.
+Authentication and Database Integration Challenge:
+We are currently working on integrating a robust authentication and database system. To achieve this, we're leveraging the infrastructure from a Canva clone project, which uses:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NeonDB (PostgreSQL) for the database
+Drizzle ORM for database operations
+NextAuth for authentication
+GitHub OAuth for user login
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Integration Objectives:
 
-## Learn More
+Implement the Canva clone's auth and database setup in Orion OS
+Adapt the "projects" concept from the Canva clone to suit our OS needs (possibly for app instances or user sessions)
+Remove unnecessary features from the Canva clone (e.g., Stripe subscriptions, Unsplash/AI features)
+Ensure seamless coexistence of our app rendering infrastructure with the new auth and database systems
 
-To learn more about Next.js, take a look at the following resources:
+Challenges:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Merging different infrastructures designed for distinct purposes
+Adapting the "projects" concept to fit our OS model
+Ensuring our existing components (Desktop, Window, DockManager) work with the new setup
+Maintaining the genie effect and WebGL animations while integrating new features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Next Steps:
 
-## Deploy on Vercel
+Analyze and merge necessary dependencies from both projects
+Integrate database schema and operations
+Set up authentication flow within our OS structure
+Adapt the "projects" concept for our OS needs
+Ensure all existing OS features work with the new infrastructure
+Remove unnecessary Canva clone features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Goals:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Create a fully functional web-based OS prototype
+Implement a robust auth and database system
+Maintain high-performance animations and effects
+Develop a scalable app integration framework
